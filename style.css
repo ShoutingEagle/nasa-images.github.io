@@ -12,9 +12,7 @@ body {
     padding: 0;
 }
 
-.image{
-    border: 1px solid salmon;
-}
+
 
 .headingAndImage{
     display: flex;
@@ -23,13 +21,13 @@ body {
     margin-inline: auto;
     background-color: black;
     text-justify: left;
-    border: 1px solid slateblue;
-    padding: 30px;
-    
+    padding: 30px; 
 }
 
 #current-image-container{
-    width: min-content;
+    display: inline-block;
+    overflow: hidden;
+    object-fit:contain;
     
 }
 
@@ -109,3 +107,11 @@ li {
 li:hover {
     text-decoration: underline;
 }
+
+
+@media screen and (max-width : 1136px)  {
+    .headingAndImage, .search-form-container{  
+        max-width: 800px;  
+    }
+
+}   
